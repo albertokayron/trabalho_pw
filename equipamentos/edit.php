@@ -10,7 +10,7 @@ if (!$eq_id) {
     exit;
 }
 
-// Fetch equipment data
+
 try {
     $stmt = $conn->prepare("SELECT * FROM equipamentos WHERE id = :id LIMIT 1");
     $stmt->execute(['id' => $eq_id]);
@@ -67,7 +67,7 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="max-w-2xl mx-auto space-y-6">
-    <!-- Breadcrumb & Title -->
+    
     <div>
         <a href="read.php" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300 transition-colors mb-3">
             <i class="fa-solid fa-arrow-left"></i> Voltar para a lista

@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../config/conexao.php';
 
-// Fetch all equipment
 try {
     $stmt = $conn->query("SELECT id, nome, valor, funcionalidade, grupo_muscular FROM equipamentos ORDER BY id DESC");
     $equipamentos = $stmt->fetchAll();
@@ -14,7 +13,6 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="space-y-6">
-    <!-- Page Header -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
             <h1 class="text-2xl font-bold tracking-tight text-white">Equipamentos</h1>
@@ -29,7 +27,6 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </div>
 
-    <!-- Equipment List -->
     <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden shadow-xl">
         <div class="overflow-x-auto">
             <table class="w-full text-left border-collapse">
