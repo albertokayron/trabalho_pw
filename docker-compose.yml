@@ -36,5 +36,18 @@ services:
       timeout: 5s
       retries: 5
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: ironberg_phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: academia_root_password
+    depends_on:
+      db:
+        condition: service_healthy
+
 volumes:
   db_data:
