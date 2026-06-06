@@ -43,4 +43,5 @@ CREATE TABLE IF NOT EXISTS funcionarios (
     data_admissao DATE NOT NULL,
     data_nascimento DATE NOT NULL,
     salario DECIMAL(10, 2) NOT NULL
-) ENGINE=InnoDB
+) ENGINE=InnoDB;
+

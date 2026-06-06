@@ -14,7 +14,6 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="space-y-6">
-    <!-- Page Header -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
             <h1 class="text-2xl font-bold tracking-tight text-white">Funcionários</h1>
@@ -29,7 +28,6 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </div>
 
-    <!-- Employees List -->
     <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden shadow-xl">
         <div class="overflow-x-auto">
             <table class="w-full text-left border-collapse">

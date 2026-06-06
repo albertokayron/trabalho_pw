@@ -95,7 +95,6 @@ require_once __DIR__ . '/../includes/header.php';
                            class="block w-full px-4 py-2.5 bg-zinc-950 border border-zinc-800 rounded-lg text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors">
                 </div>
 
-                <!-- Price/Value -->
                 <div>
                     <label for="valor" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Valor de Aquisição (R$)</label>
                     <div class="relative">
@@ -106,7 +105,6 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
-                <!-- Muscle Group -->
                 <div>
                     <label for="grupo_muscular" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Grupo Muscular Principal</label>
                     <select name="grupo_muscular" id="grupo_muscular" required

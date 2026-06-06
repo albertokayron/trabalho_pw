@@ -44,7 +44,6 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="max-w-2xl mx-auto space-y-6">
-    <!-- Breadcrumb & Title -->
     <div>
         <a href="read.php" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300 transition-colors mb-3">
             <i class="fa-solid fa-arrow-left"></i> Voltar para a lista
@@ -53,7 +52,6 @@ require_once __DIR__ . '/../includes/header.php';
         <p class="text-sm text-zinc-400">Insira as especificações da nova máquina ou acessório adquirido.</p>
     </div>
 
-    <!-- Form Card -->
     <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 md:p-8 shadow-xl">
         <?php if (!empty($error_message)): ?>
             <div class="mb-6 p-4 rounded-lg bg-red-950/40 border border-red-800/40 text-red-400 text-sm flex items-center gap-2.5">
@@ -72,7 +70,6 @@ require_once __DIR__ . '/../includes/header.php';
                            class="block w-full px-4 py-2.5 bg-zinc-950 border border-zinc-800 rounded-lg text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors">
                 </div>
 
-                <!-- Price/Value -->
                 <div>
                     <label for="valor" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Valor de Aquisição (R$)</label>
                     <div class="relative">
@@ -83,7 +80,6 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
 
-                <!-- Muscle Group -->
                 <div>
                     <label for="grupo_muscular" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Grupo Muscular Principal</label>
                     <select name="grupo_muscular" id="grupo_muscular" required
@@ -99,7 +95,6 @@ require_once __DIR__ . '/../includes/header.php';
                     </select>
                 </div>
 
-                <!-- Functionality / Description -->
                 <div class="md:col-span-2">
                     <label for="funcionalidade" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Funcionalidade / Descrição</label>
                     <textarea name="funcionalidade" id="funcionalidade" required rows="4"
@@ -108,7 +103,6 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
             </div>
 
-            <!-- Form Actions -->
             <div class="flex items-center justify-end gap-4 pt-4 border-t border-zinc-800">
                 <a href="read.php" 
                    class="px-4 py-2.5 bg-zinc-850 hover:bg-zinc-800 active:bg-zinc-750 text-zinc-300 hover:text-white text-sm font-semibold rounded-lg transition-colors border border-zinc-800">

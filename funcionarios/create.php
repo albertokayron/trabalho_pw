@@ -102,7 +102,6 @@ require_once __DIR__ . '/../includes/header.php';
                            class="block w-full px-4 py-2.5 bg-zinc-950 border border-zinc-800 rounded-lg text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors">
                 </div>
 
-                <!-- Birth Date -->
                 <div>
                     <label for="data_nascimento" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Data de Nascimento</label>
                     <input type="date" name="data_nascimento" id="data_nascimento" required value="<?php echo htmlspecialchars($data_nascimento); ?>"
@@ -110,7 +109,6 @@ require_once __DIR__ . '/../includes/header.php';
                 </div>
             </div>
 
-            <!-- Form Actions -->
             <div class="flex items-center justify-end gap-4 pt-4 border-t border-zinc-800">
                 <a href="read.php" 
                    class="px-4 py-2.5 bg-zinc-850 hover:bg-zinc-800 active:bg-zinc-750 text-zinc-300 hover:text-white text-sm font-semibold rounded-lg transition-colors border border-zinc-800">
