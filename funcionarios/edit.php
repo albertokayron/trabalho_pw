@@ -10,7 +10,6 @@ if (!$func_id) {
     exit;
 }
 
-// Fetch employee data
 try {
     $stmt = $conn->prepare("SELECT * FROM funcionarios WHERE id = :id LIMIT 1");
     $stmt->execute(['id' => $func_id]);
@@ -77,7 +76,6 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="max-w-2xl mx-auto space-y-6">
-    <!-- Breadcrumb & Title -->
     <div>
         <a href="read.php" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300 transition-colors mb-3">
             <i class="fa-solid fa-arrow-left"></i> Voltar para a lista
@@ -105,7 +103,6 @@ require_once __DIR__ . '/../includes/header.php';
                            class="block w-full px-4 py-2.5 bg-zinc-950 border border-zinc-800 rounded-lg text-sm text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors">
                 </div>
 
-                <!-- Role / Function -->
                 <div>
                     <label for="funcao" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Função / Cargo</label>
                     <input type="text" name="funcao" id="funcao" required value="<?php echo htmlspecialchars($funcao); ?>"

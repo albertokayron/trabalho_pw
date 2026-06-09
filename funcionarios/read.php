@@ -2,7 +2,6 @@
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../config/conexao.php';
 
-// Fetch all employees
 try {
     $stmt = $conn->query("SELECT id, nome, funcao, data_admissao, data_nascimento, salario FROM funcionarios ORDER BY id DESC");
     $funcionarios = $stmt->fetchAll();

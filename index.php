@@ -92,10 +92,8 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </div>
 
-    <!-- Main Dashboard Split Layout -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- Left 2 Cols: Recent activity tables -->
         <div class="lg:col-span-2 space-y-8">
             <!-- Recent Students -->
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl space-y-4">
@@ -134,7 +132,6 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <!-- Recent Equipment -->
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl space-y-4">
                 <div class="flex items-center justify-between">
                     <h3 class="font-bold text-lg text-white flex items-center gap-2">
@@ -176,7 +173,6 @@ require_once __DIR__ . '/includes/header.php';
             </div>
         </div>
 
-        <!-- Right 1 Col: Quick Links Panel -->
         <div class="space-y-6">
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-xl space-y-4">
                 <h3 class="font-bold text-lg text-white flex items-center gap-2">
@@ -226,7 +222,6 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <!-- Gym Quotes card for extra premium feel -->
             <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-xl p-5 shadow-lg flex flex-col justify-between aspect-video relative overflow-hidden">
                 <div class="absolute -right-6 -bottom-6 text-zinc-800/30 text-8xl font-black select-none pointer-events-none transform -rotate-12">
                     IRON

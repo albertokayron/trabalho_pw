@@ -120,7 +120,6 @@ require_once __DIR__ . '/../includes/header.php';
                     </select>
                 </div>
 
-                <!-- Functionality / Description -->
                 <div class="md:col-span-2">
                     <label for="funcionalidade" class="block text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Funcionalidade / Descrição</label>
                     <textarea name="funcionalidade" id="funcionalidade" required rows="4"

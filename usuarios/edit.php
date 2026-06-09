@@ -10,7 +10,7 @@ if (!$user_id) {
     exit;
 }
 
-// Fetch user data
+// user data
 try {
     $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = :id LIMIT 1");
     $stmt->execute(['id' => $user_id]);
